@@ -49,7 +49,6 @@ p {
     font-size: 4rem;
   }
 }
-
 /* Links */
 a {
   text-decoration: none;
@@ -123,7 +122,6 @@ a {
     padding-left: 0;
   }
 }
-
 /* ICON */
 .icon {
   width: 64px;
@@ -189,11 +187,12 @@ a {
   display: inline-block;
 }
 @media screen and (min-width: 1024px) {
-  .btn{
+  .btn {
     font-size: 1.5rem;
+  }
 }
 /* INPUT */
-.input{
+.input {
   border-radius: 30px;
   border: 1px solid #ccc;
   color: var(--color-heading);
@@ -201,8 +200,11 @@ a {
   outline: 0;
   padding: 1.5rem 3.5rem;
 }
-::placeholder{
+::placeholder {
   color: #cdcbd7;
 }
-
-
+@media screen and (min-width: 1024px) {
+  .input {
+    font-size: 1.5rem;
+  }
+}
