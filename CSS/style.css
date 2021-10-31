@@ -4,6 +4,8 @@
   --color-accent: #aff0dc;
   --color-heading: #b6a8e9;
   --color-body: #b8c9dd;
+  --color-border: #ccc;
+  --border-radius: 30px;
 }
 *,
 *::after,
@@ -193,12 +195,25 @@ a {
 }
 /* INPUT */
 .input {
-  border-radius: 30px;
-  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border);
   color: var(--color-heading);
-  font-size: 2rem;
+  font-size: 5rem;
   outline: 0;
-  padding: 1.5rem 3.5rem;
+  padding: 1.5rem 1rem;
+  flex-grow: 1;
+}
+.input-group {
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  display: flex;
+  padding: 1.5rem 1rem;
+}
+.input-group .input {
+  border: 0;
+}
+.btn {
+  margin: 4px;
 }
 ::placeholder {
   color: #cdcbd7;
