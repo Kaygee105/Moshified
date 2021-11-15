@@ -280,6 +280,9 @@ a {
   opacity: 0.8;
   margin-right: 1rem;
 }
+.card--primary .badge--primary {
+  background: #37b8c9;
+}
 .card--secondary .badge--secondary {
   background: #0edb7b;
 }
@@ -291,6 +294,9 @@ a {
 .plan .list__item {
   margin-bottom: 2rem;
 }
+.plan--popular {
+  transform: scale(1.1);
+}
 .plan--popular .card__header {
   position: relative;
 }
@@ -301,6 +307,13 @@ a {
   position: absolute;
   top: 0;
   right: 5%;
+}
+.plan:hover {
+  transform: scale(1.05);
+}
+
+.plan--popular:hover {
+  transform: scale(1.15);
 }
 @media screen and (min-width: 1024px) {
   .plan__name {
@@ -561,5 +574,43 @@ a {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     max-width: 700px;
     margin: 0 auto;
+  }
+}
+/* Plan Block */
+.plan {
+  transition: transform 0.2s ease-out;
+}
+.block-plans .grid {
+  gap: 8rem 4rem;
+}
+.block-plans .card {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .plan-block {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+}
+/* Feature Block */
+.feature {
+  gap: 4rem 2rem;
+  margin: 12rem 1rem;
+}
+.feature:nth-of-type(even) {
+  margin-top: 6rem;
+}
+.feature__heading {
+  margin: 1rem 0;
+}
+.feature__image {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .feature:nth-of-type(even) .feature__content {
+    order: 2;
   }
 }
