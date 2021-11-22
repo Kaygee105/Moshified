@@ -1,19 +1,21 @@
-@import "./normalize.css";
 :root {
   --color-primary: #79c7d1;
-  --color-secondary: #45c98b;
+  --color-secondary: #08703f;
   --color-accent: #c74e17;
   --color-heading: #350ec0;
   --color-body: #b8c9dd;
   --color-border: #ccc;
   --border-radius: 30px;
   --color-body-darker: #5c5577;
+  --padding-vertical: 6rem;
 }
+
 *,
 *::after,
 *::before {
   box-sizing: border-box;
 }
+
 /* Typography */
 ::selection {
   background: var(--color-primary);
@@ -23,6 +25,7 @@
 html {
   font-size: 62.5%;
 }
+
 body {
   font-family: inter, Arial, Helvetica, sans-serif;
   color: var(--color-body);
@@ -330,7 +333,7 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .plan__name {
-    font-size: 7.4;
+    font-size: 7.4rem;
   }
   .plan__price {
     font-size: 5rem;
@@ -466,7 +469,6 @@ a {
 }
 /* Block */
 .block {
-  --padding-vertical: 6rem;
   padding: var(--padding-vertical) 2rem;
 }
 .block__heading {
@@ -740,4 +742,4 @@ a {
   .list a {
     font-size: 1.5rem;
   }
- 
+}
